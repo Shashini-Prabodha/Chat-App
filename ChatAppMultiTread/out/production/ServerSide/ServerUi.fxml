@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="626.0" prefWidth="1057.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerUiController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1149.0" style="-fx-border-radius: 40; -fx-border-color: black; -fx-border-width: 50;">
+         <children>
+            <ImageView fitHeight="570.0" fitWidth="402.0" layoutX="48.0" layoutY="56.0" opacity="0.57" pickOnBounds="true">
+               <image>
+                  <Image url="@asserts/f28295a9aee650a774f8763e31950c0b.jpg" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="txtMessageArea" editable="false" layoutX="456.0" layoutY="117.0" prefHeight="441.0" prefWidth="636.0">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font></TextArea>
+            <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="571.0" layoutY="3.0" opacity="0.86" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@asserts/bandicam_100px.png" />
+               </image>
+            </ImageView>
+            <TextField editable="false" layoutX="455.0" layoutY="564.0" prefHeight="58.0" prefWidth="593.0" style="-fx-background-radius: 50;" />
+            <TextField fx:id="txtMessage" layoutX="508.0" layoutY="565.0" prefHeight="51.0" prefWidth="440.0" style="-fx-border-color: white;">
+               <font>
+                  <Font name="Times New Roman" size="17.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="56.0" layoutY="56.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="382.0" style="-fx-background-radius: 50;">
+               <children>
+                  <ImageView fitHeight="399.0" fitWidth="402.0" layoutX="-11.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/—Pngtree—work%20from%20home%20freelancing%20working_5344885.png" />
+                     </image>
+                  </ImageView>
+                  <Pane fx:id="btnNew" layoutX="60.0" layoutY="455.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnContactOnAction" prefHeight="51.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: purple; -fx-border-color: purple; -fx-border-width: 3;" text=" ">
+                           <ripplerFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#33ebe2" />
+                                    <Stop color="#cd27cd" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@asserts/add_administrator_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnSetting" layoutX="150.0" layoutY="455.0">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnSettingOnAction" prefHeight="51.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: purple; -fx-border-color: purple; -fx-border-width: 3;" text=" ">
+                           <ripplerFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#33ebe2" />
+                                    <Stop color="#cd27cd" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@asserts/settings_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                     </children>
+                  </Pane>
+                  <Pane fx:id="btnOff" layoutX="242.0" layoutY="455.0">
+                     <children>
+                        <JFXButton alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnOffOnAction" prefHeight="51.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-background-color: purple; -fx-border-color: purple; -fx-border-width: 3;" text=" ">
+                           <ripplerFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#33ebe2" />
+                                    <Stop color="#cd27cd" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@asserts/power_off_button_100px.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="49.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.72" prefHeight="64.0" prefWidth="1051.0" style="-fx-background-color: linear-gradient(to top, #3a0047, #571466, #762987, #963ea9, #b854cd, #bd55d3, #c157d8, #c658de, #ae45c6, #9731ae, #801c97, #6a0080);">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="371.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat Server" wrappingWidth="223.498046875">
+                     <font>
+                        <Font name="Victorian LET Plain:1.0" size="46.0" />
+                     </font>
+                     <effect>
+                        <Shadow />
+                     </effect>
+                  </Text>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="378.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat Server" wrappingWidth="223.498046875">
+                     <font>
+                        <Font name="Victorian LET Plain:1.0" size="46.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="602.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/messaging_10s0px.png" />
+                     </image>
+                     <effect>
+                        <Shadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="52.0" layoutX="602.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/messaging_10s0px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="1048.0" layoutY="567.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnSentOnAction" prefHeight="51.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" text=" ">
+               <ripplerFill>
+                  <RadialGradient centerX="0.4943181818181818" centerY="0.4271844660194175" radius="0.5">
+                     <stops>
+                        <Stop color="#20c7ff" />
+                        <Stop color="#663d83" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/sent_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="999.0" layoutY="568.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCamOnAction" prefHeight="51.0" prefWidth="40.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" text=" ">
+               <ripplerFill>
+                  <RadialGradient centerX="0.4943181818181818" centerY="0.4271844660194175" radius="0.5">
+                     <stops>
+                        <Stop color="#20c7ff" />
+                        <Stop color="#663d83" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/camera_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="945.0" layoutY="566.0" prefHeight="51.0" prefWidth="52.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" text=" ">
+               <ripplerFill>
+                  <RadialGradient centerX="0.4943181818181818" centerY="0.4271844660194175" radius="0.5">
+                     <stops>
+                        <Stop color="#20c7ff" />
+                        <Stop color="#663d83" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" onDragDetected="#btnAttachOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/attach_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="456.0" layoutY="567.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="51.0" prefWidth="40.0" style="-fx-background-radius: 100; -fx-border-radius: 100;" text=" ">
+               <ripplerFill>
+                  <RadialGradient centerX="0.4943181818181818" centerY="0.4271844660194175" radius="0.5">
+                     <stops>
+                        <Stop color="#20c7ff" />
+                        <Stop color="#663d83" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" onDragDetected="#btnAttachOnAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asserts/grinning_face_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

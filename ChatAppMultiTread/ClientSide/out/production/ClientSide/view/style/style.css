@@ -1,0 +1,10 @@
+
+.combo-box .cell:selected {
+    -fx-text-fill: white;
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 15px;
+}
+.combo-box {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 15px;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ChatAppMultiTread.iml" filepath="$PROJECT_DIR$/.idea/ChatAppMultiTread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClientSide/ClientSide.iml" filepath="$PROJECT_DIR$/ClientSide/ClientSide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ServerSide/ServerSide.iml" filepath="$PROJECT_DIR$/ServerSide/ServerSide.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="612.0" prefWidth="443.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginClientUiController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="76.0" prefHeight="554.0" prefWidth="433.0" style="-fx-border-radius: 50; -fx-background-radius: 50; -fx-background-color: white;">
+         <children>
+            <Text layoutX="170.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" underline="true" wrappingWidth="140.6708984375">
+               <font>
+                  <Font name="Victorian LET Plain:1.0" size="33.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#4b0097" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Text>
+            <Text fill="WHITE" layoutX="110.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your ID : ">
+               <font>
+                  <Font name="Times New Roman Bold" size="37.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnConnect" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="156.0" layoutY="475.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnConnect" prefHeight="41.0" prefWidth="121.0" style="-fx-background-radius: 50; -fx-border-color: black; -fx-border-radius: 50;" text="Connect">
+               <ripplerFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#1534ff" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Victorian LET Plain:1.0" size="25.0" />
+               </font>
+               <padding>
+                  <Insets top="-1.0" />
+               </padding>
+            </JFXButton>
+            <ImageView fitHeight="262.0" fitWidth="463.0" layoutX="22.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/conversation_with_support@2bx.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtId" alignment="CENTER" focusColor="RED" layoutX="47.0" layoutY="386.0" prefHeight="59.0" prefWidth="340.0" style="-fx-background-color: #dff9fb; -fx-background-radius: 50;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="28.0" />
+               </font>
+            </JFXTextField>
+            <ImageView fitHeight="189.0" fitWidth="156.0" layoutX="132.0" layoutY="-91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/male_user_32px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

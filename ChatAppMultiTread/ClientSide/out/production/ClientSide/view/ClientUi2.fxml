@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="838.0" prefWidth="456.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientUiController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="838.0" prefWidth="456.0" style="-fx-background-radius: 40; -fx-border-width: 10; -fx-border-radius: 40; -fx-border-color: linear-gradient(to left bottom, #1f0025, #1f0d28, #21152a, #231d2c, #27242d, #28252b, #29262a, #292829, #262526, #222122, #1f1e1f, #1c1b1c); -fx-background-radius: 70;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="7.0" layoutY="9.0" prefHeight="91.0" prefWidth="447.0" style="-fx-background-color: linear-gradient(to left bottom, #1f0025, #1f0d28, #21152a, #231d2c, #27242d, #28252b, #29262a, #292829, #262526, #222122, #1f1e1f, #1c1b1c); -fx-background-radius: 40;">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="50.0" layoutX="198.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/bandicam_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="388.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/battery_level_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="20.0" layoutX="356.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/wi-fi_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="32.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11.45 AM">
+                     <font>
+                        <Font name="Times New Roman" size="12.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="27.0" fitWidth="20.0" layoutX="323.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/bluetooth_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="63.0" prefHeight="98.0" prefWidth="440.0" style="-fx-background-color: linear-gradient(to right, #050074, #002b8f, #004aa4, #0067b4, #0084c1, #0084bd, #0085b9, #0085b5, #006ba2, #00518c, #003875, #051f5c);">
+               <children>
+                  <Circle layoutX="77.0" layoutY="42.0" radius="34.0" stroke="TRANSPARENT" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#eeeeee" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                     <effect>
+                        <Shadow />
+                     </effect>
+                  </Circle>
+                  <Circle fill="WHITE" layoutX="80.0" layoutY="42.0" radius="34.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <ImageView fitHeight="62.0" fitWidth="47.0" layoutX="55.0" layoutY="17.0" opacity="0.42" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/person_100px.png" />
+                     </image>
+                     <effect>
+                        <Shadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="62.0" fitWidth="47.0" layoutX="56.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/person_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="314.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/video_call_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="28.0" layoutX="362.0" layoutY="24.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/call_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="395.0" layoutY="19.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/more_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="36.0" layoutX="10.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/arrow_pointing_left_100px.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="txtClientName" fill="WHITE" layoutX="127.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client 1" wrappingWidth="169.6357421875">
+                     <font>
+                        <Font name="Times New Roman Bold" size="29.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="726.0" prefHeight="105.0" prefWidth="440.0" style="-fx-background-color: linear-gradient(to left bottom, #1f0025, #1f0d28, #21152a, #231d2c, #27242d, #28252b, #29262a, #292829, #262526, #222122, #1f1e1f, #1c1b1c); -fx-background-radius: 40;">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="81.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/square_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="203.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/sphere_100px.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="335.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../asserts/undo_100px.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <AnchorPane layoutX="9.0" layoutY="132.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="440.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+               <children>
+                  <Pane layoutY="583.0" prefHeight="61.0" prefWidth="440.0" style="-fx-background-color: linear-gradient(to right, #050074, #002b8f, #004aa4, #0067b4, #0084c1, #0084bd, #0085b9, #0085b5, #006ba2, #00518c, #003875, #051f5c);">
+                     <children>
+                        <JFXButton buttonType="RAISED" layoutX="389.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnSentOnAction" prefHeight="47.0" prefWidth="59.0" text=" ">
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../asserts/sent_100pex.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <ripplerFill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop color="#45ecf2" />
+                                    <Stop color="WHITE" offset="1.0" />
+                                 </stops>
+                              </RadialGradient>
+                           </ripplerFill>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <TextField editable="false" layoutX="5.0" layoutY="589.0" prefHeight="47.0" prefWidth="384.0" style="-fx-border-radius: 50; -fx-background-radius: 50;">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </TextField>
+                  <JFXTextArea fx:id="txtMessageArea" editable="false" layoutX="14.0" layoutY="64.0" prefHeight="509.0" prefWidth="411.0" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </JFXTextArea>
+                  <TextField fx:id="txtMessage" layoutX="47.0" layoutY="589.0" prefHeight="47.0" prefWidth="267.0" style="-fx-border-color: white;">
+                     <font>
+                        <Font name="Times New Roman" size="19.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="btnAttach" buttonType="RAISED" layoutX="298.0" layoutY="588.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnAttachOnAction" prefHeight="47.0" prefWidth="37.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asserts/attach_s100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#08a9c9" />
+                              <Stop color="#e1e1e1" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="346.0" layoutY="589.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCamOnAction" prefHeight="47.0" prefWidth="37.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asserts/camera_1aa00px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#08a9c9" />
+                              <Stop color="#e1e1e1" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" contentDisplay="CENTER" layoutX="16.0" layoutY="588.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnEmogiOnAction" prefHeight="47.0" prefWidth="36.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asserts/grinning_face_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#08a9c9" />
+                              <Stop color="#e1e1e1" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="btnOff" buttonType="RAISED" contentDisplay="CENTER" layoutX="397.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnOffOnAction" prefHeight="47.0" prefWidth="36.0" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../asserts/g.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#08a9c9" />
+                              <Stop color="#e1e1e1" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </ripplerFill>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXComboBox fx:id="txtCombo" layoutX="127.0" layoutY="11.0" prefHeight="36.0" prefWidth="233.0" stylesheets="@style/style.css">
+                     <styleClass>
+                        <String fx:value="cell" />
+                        <String fx:value="combo-box" />
+                     </styleClass>
+                  </JFXComboBox>
+                  <Text layoutX="39.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sent To">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
